@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 65594833}
   - component: {fileID: 65594832}
   - component: {fileID: 65594831}
+  - component: {fileID: 65594836}
+  - component: {fileID: 65594835}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -228,6 +230,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &65594835
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65594830}
+  serializedVersion: 4
+  m_Mass: 50
+  m_Drag: 30
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 124
+  m_CollisionDetection: 0
+--- !u!114 &65594836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65594830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad13c5e5984054e42ab814e0d3c5b1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 1000
 --- !u!1 &125306581
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb4396c59503f7479aee71b8c2a8a25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!54 &125306583
 Rigidbody:
   m_ObjectHideFlags: 0
