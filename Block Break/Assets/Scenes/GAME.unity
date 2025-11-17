@@ -522,10 +522,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 65594834}
+  - component: {fileID: 65594836}
   - component: {fileID: 65594833}
   - component: {fileID: 65594832}
   - component: {fileID: 65594831}
-  - component: {fileID: 65594836}
   - component: {fileID: 65594835}
   m_Layer: 0
   m_Name: Paddle
